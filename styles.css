@@ -25,15 +25,26 @@ body {
 .logo-section {
     display: flex;
     align-items: center;
+    background-color: #ffffff; /* White background */
+    padding: 5px 10px; /* Padding around the logo and name */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle effect */
 }
 
+/* Logo and Company Name Styling */
 .logo {
     height: 40px;
     margin-right: 10px;
+    background-color: #ffffff; /* White background if needed for transparency */
+    padding: 3px;
+    border-radius: 5px; /* Optional, to match the container */
 }
 
 .company-name {
     height: 30px;
+    background-color: #ffffff; /* White background if needed for transparency */
+    padding: 3px;
+    border-radius: 5px; /* Optional, to match the container */
 }
 
 /* Right Section for Search and WhatsApp Button */
@@ -130,3 +141,13 @@ body {
     }
 }
 
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .logo-section {
+        justify-content: center; /* Center-align on mobile */
+        padding: 8px 12px; /* Increase padding for a better look on mobile */
+    }
+    .logo, .company-name {
+        height: 35px; /* Slightly smaller on mobile */
+    }
+}
