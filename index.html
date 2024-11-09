@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW AGE IT SOLUTIONS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Navbar -->
+    <div class="navbar">
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <img src="companylogo.png" alt="Company Logo" class="logo">
+            <img src="companyname.png" alt="Company Name" class="company-name">
+        </div>
+
+        <!-- Search Section and WhatsApp Button -->
+        <div class="right-section">
+            <div class="search-section">
+                <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+                <button class="search-button" onclick="performSearch()">
+                    <img src="search.png" alt="Search">
+                </button>
+            </div>
+            <button class="whatsapp-button" onclick="connectToWhatsApp()">
+                Connect to WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Secondary Navbar -->
+    <div class="secondary-navbar">
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+    </div>
+
+    <!-- Scrolling Images Section -->
+    <div class="scrolling-images-container">
+        <div class="scrolling-images">
+            <img src="scrollingimage1.webp" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <img src="image4.jpg" alt="Image 4">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+
+    <!-- Dynamic Search Result Display -->
+    <div id="searchResult" class="search-result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
