@@ -18,33 +18,26 @@ body {
     background-color: #ffffff;
     padding: 10px 20px;
     border-bottom: 2px solid #000;
-    flex-wrap: wrap; /* For better responsiveness */
+    flex-wrap: wrap; /* For responsiveness */
 }
 
 /* Logo Section Styling */
 .logo-section {
     display: flex;
     align-items: center;
-    background-color: #ffffff; /* White background */
-    padding: 5px 10px; /* Padding around the logo and name */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle effect */
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo and Company Name Styling */
 .logo {
     height: 40px;
     margin-right: 10px;
-    background-color: #ffffff; /* White background if needed for transparency */
-    padding: 3px;
-    border-radius: 5px; /* Optional, to match the container */
 }
 
 .company-name {
     height: 30px;
-    background-color: #ffffff; /* White background if needed for transparency */
-    padding: 3px;
-    border-radius: 5px; /* Optional, to match the container */
 }
 
 /* Right Section for Search and WhatsApp Button */
@@ -52,10 +45,8 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 10px; /* Optional: add margin for mobile view */
 }
 
-/* Search Section Styling */
 .search-section {
     display: flex;
     align-items: center;
@@ -81,7 +72,6 @@ body {
     height: 16px;
 }
 
-/* WhatsApp Button Styling */
 .whatsapp-button {
     background-color: #25D366;
     color: #fff;
@@ -128,7 +118,7 @@ body {
 }
 
 .scrolling-images img {
-    width: 900px;  /* Adjust image width as needed */
+    width: 900px;
     margin-right: 20px;
 }
 
@@ -141,13 +131,48 @@ body {
     }
 }
 
-/* Responsive adjustments for mobile */
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mobile Responsive Styling */
 @media (max-width: 768px) {
     .logo-section {
-        justify-content: center; /* Center-align on mobile */
-        padding: 8px 12px; /* Increase padding for a better look on mobile */
+        justify-content: center;
     }
-    .logo, .company-name {
-        height: 35px; /* Slightly smaller on mobile */
+
+    .right-section {
+        display: none; /* Hide search and WhatsApp button on small screens */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the hamburger menu icon */
+    }
+
+    .secondary-navbar {
+        display: none; /* Hide by default for mobile */
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    .secondary-navbar a {
+        padding: 10px;
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+
+    .secondary-navbar a:hover {
+        background-color: #555;
+    }
+
+    /* Show the navbar when menu is toggled */
+    .secondary-navbar.show {
+        display: flex;
     }
 }
