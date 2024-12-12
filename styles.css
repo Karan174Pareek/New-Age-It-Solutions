@@ -202,3 +202,41 @@ body {
 .social-media img:hover {
     transform: scale(1.1);
 }
+
+/* Products */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.product {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+.product:hover {
+    transform: scale(1.05);
+}
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.details-button {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.details-button:hover {
+    background-color: #0056b3;
+}

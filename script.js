@@ -6,3 +6,10 @@ function toggleMenu() {
     const menu = document.getElementById('menu');
     menu.classList.toggle('show');
 }
+//For products
+document.querySelectorAll('.details-button').forEach(button => {
+    button.addEventListener('click', (event) => {
+        event.preventDefault();
+        alert('More details about the product will be displayed here.');
+    });
+});
